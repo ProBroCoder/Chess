@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2f2f2;
+}
+
+h1 {
+margin-top:20px;
+    color: white;
+    font-size: 40px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 1200px; /* Increased container width to fit larger board */
+    background-color: #302E2B;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.board {
+    width: 80%; /* Increased board width to 80% of the container */
+    max-width: 1150px; /* Fixed max width for the board */
+    margin-top: 60px; /* Reduced top margin for better alignment */
+}
+
+.buttons {
+    margin-top: 60px; /* Adjusted top margin to match the new layout */
+    margin-right: 20px; /* Reduced margin-right for better spacing */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+button {
+    color: #000;
+    background-color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+.move-history {
+    margin-top: 70px; /* Reduced margin-top */
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    max-height: 300px;
+    overflow-y: auto;
+    font-size: 1rem;
+    white-space: pre-line;
+    width: 500px; /* Adjusted width to accommodate larger board */
+}
